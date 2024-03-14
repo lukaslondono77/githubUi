@@ -1,1 +1,20 @@
+# Contribution Guidelines
+
+We appreciate contributions from the community! To ensure a smooth and collaborative development process, please follow these guidelines:
+
+1. **Fork the repository:** Start by forking the repository to your GitHub account.
+
+2. **Create a new branch:** Before making any changes, create a new branch to work on your feature or bug fix.
+
+3. **Commit changes:** Make your changes in small, focused commits with clear and descriptive messages.
+
+4. **Test your code:** Ensure that your changes are properly tested and don't introduce any regressions.
+
+5. **Submit a pull request:** Once you're ready, submit a pull request to the main repository, explaining the purpose and scope of your changes.
+
+6. **Be responsive:** Respond to feedback and address any requested changes promptly to facilitate the review process.
+
+7. **Follow project conventions:** Adhere to the project's coding style, naming conventions, and other guidelines outlined in the repository.
+
+Thank you for contributing to the project!
 
