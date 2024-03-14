@@ -1,9 +1,8 @@
-# Practice Project
 
-Welcome to the Practice Project repository!
-
-This project serves as a practice ground for honing your coding skills. Whether you're a beginner looking to learn new concepts or an experienced developer seeking to refine your techniques, this project offers a collaborative environment for growth and improvement.
-
-Feel free to explore the project, contribute your code, and engage with the community. Together, let's learn, build, and inspire!
-
-Happy coding!
+A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
+Input:
+   p, principal amount
+   t, time period in years
+   r, annual rate of interest
+Output
+   simple interest = p*t*r
