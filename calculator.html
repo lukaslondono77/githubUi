@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="calculator.py">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .calculator h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .calculator input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .calculator input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .calculator input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Simple Interest Calculator</h2>
+    <form id="calculatorForm">
+        <label for="principal">Principal Amount:</label>
+        <input type="text" id="principal" name="principal" placeholder="Enter principal amount">
+
+        <label for="time">Time Period (in years):</label>
+        <input type="text" id="time" name="time" placeholder="Enter time period">
+
+        <label for="rate">Annual Rate of Interest:</label>
+        <input type="text" id="rate" name="rate" placeholder="Enter annual rate of interest">
+
+        <input type="submit" value="Calculate">
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+    document.getElementById("calculatorForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var principal = parseFloat(document.getElementById("principal").value);
+        var time = parseFloat(document.getElementById("time").value);
+        var rate = parseFloat(document.getElementById("rate").value);
+        
+        var simpleInterest = (principal * time * rate).toFixed(2);
+        
+        document.getElementById("result").innerText = "Simple Interest: " + simpleInterest;
+    });
+</script>
+
+</body>
+</html>
